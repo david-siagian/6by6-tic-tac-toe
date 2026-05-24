@@ -6,21 +6,20 @@ export default function GameBoard({ playerMove, gameBoard, updateCell }) {
   };
 
   return (
-    <ol id="game-board">
+    <div id="game-board">
       {gameBoard.map((value, idxValue) => (
-        <ol key={idxValue}>
+        <div key={idxValue} style={{ display: "flex", justifyContent: "center" }}>
           {value.map((item, idxItem) => (
-            <li key={`${idxValue}-${idxItem}`}>
-              <button
-                onClick={() => handleClickedCell(idxValue, idxItem)}
-                disabled={item !== null}
-              >
-                {item}
-              </button>
-            </li>
+            <button
+              key={`${idxValue}-${idxItem}`}
+              onClick={() => handleClickedCell(idxValue, idxItem)}
+              disabled={item !== null}
+            >
+              {item}
+            </button>
           ))}
-        </ol>
+        </div>
       ))}
-    </ol>
+    </div>
   );
 }

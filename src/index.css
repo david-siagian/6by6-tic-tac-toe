@@ -165,20 +165,10 @@ ol {
 
 #game-board {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
   margin: 3rem 0;
-  padding: 0;
-  flex-direction: column;
-}
-
-#game-board ol {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0;
   padding: 0;
 }
 
@@ -192,6 +182,15 @@ ol {
   cursor: pointer;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0.1rem;
+}
+
+/* Responsive: smaller buttons on mobile */
+@media (max-width: 400px) {
+  #game-board button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+  }
 }
 
 #game-over {
