@@ -8,7 +8,7 @@ export default function GameBoard({ playerMove, gameBoard, updateCell }) {
   return (
     <div id="game-board">
       {gameBoard.map((value, idxValue) => (
-        <div key={idxValue} style={{ display: "flex", justifyContent: "center" }}>
+        <div key={idxValue} style={{ display: "flex", gap: "0" }}>
           {value.map((item, idxItem) => (
             <button
               key={`${idxValue}-${idxItem}`}
