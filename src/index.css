@@ -44,14 +44,14 @@ header {
 header img {
   width: 6rem;
   object-fit: contain;
-  margin: auto auto auto 1rem;
+  margin: auto 1rem auto auto;
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
 }
 
 h1 {
   font-family: "Caprasimo", cursive;
   font-size: 3rem;
-  margin: 1rem 1rem 1rem auto;
+  margin: 1rem auto 1rem 1rem;
   color: #3f3b00;
 }
 
@@ -120,7 +120,7 @@ h1 {
 
 .player-name {
   justify-self: end;
-  display: inline-block;
+  /* display: inline-block; */
   width: min(5rem, 100%);
   font-size: 1rem;
   color: #e1dec7;
