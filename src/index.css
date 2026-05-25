@@ -34,20 +34,24 @@ body {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
 }
 
 header img {
-  width: 8rem;
+  width: 6rem;
   object-fit: contain;
-  margin: 3rem auto 1rem auto;
+  margin: auto auto auto 1rem;
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
 }
 
 h1 {
   font-family: "Caprasimo", cursive;
   font-size: 3rem;
-  margin: 0 auto 3rem auto;
+  margin: 1rem 1rem 1rem auto;
   color: #3f3b00;
 }
 
@@ -73,8 +77,9 @@ h1 {
 
 #players li {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: max(0.5vw, 500rem);
   border: 2px solid transparent;
 }
 
@@ -89,6 +94,8 @@ h1 {
 }
 
 #players button {
+  grid-column: 1 / -1;
+  justify-self: center;
   width: 3rem;
   border: none;
   background: none;
@@ -112,8 +119,9 @@ h1 {
 }
 
 .player-name {
+  justify-self: end;
   display: inline-block;
-  width: 10rem;
+  width: min(5rem, 100%);
   font-size: 1rem;
   color: #e1dec7;
   text-transform: uppercase;
@@ -137,7 +145,7 @@ h1 {
 }
 
 .player-symbol {
-  margin-left: 1rem;
+  margin-left: 0rem;
   font-size: 1rem;
   color: #e1dec7;
 }
@@ -173,25 +181,16 @@ ol {
 }
 
 #game-board button {
-  width: 5rem;
-  height: 5rem;
+  width: min(10vw, 5rem);
+  height: min(12vh, 5rem);
   border: 2px solid #3f3b00;
   background: #aca788;
   color: #3f3b00;
-  font-size: 4rem;
+  font-size: min(8vh, 3.5rem);
   cursor: pointer;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0;
   margin: 0;
-}
-
-/* Responsive: smaller buttons on mobile */
-@media (max-width: 400px) {
-  #game-board button {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 2.5rem;
-  }
 }
 
 #game-over {

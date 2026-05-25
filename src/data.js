@@ -8,8 +8,8 @@ export const INITIAL_GAME_BOARD = [
 ];
 
 export const PLAYERS = {
-  X: "PLAYER 1",
-  O: "PLAYER 2",
+  X: "JEREMIA",
+  O: "JOSHUA",
 };
 
 export const WINNING_COMBINATIONS = [

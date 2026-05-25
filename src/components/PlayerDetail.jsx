@@ -23,8 +23,8 @@ export default function PlayerDetail({ name, symbol, isActive, editName }) {
 
   return (
     <li className={`player${isActive ? " active" : ""}`}>
-      {editingState}
       <span className="player-symbol">{symbol}</span>
+      {editingState}
       <button type="button" onClick={handleEditClick}>
         {isEditing ? "Save" : "Edit"}
       </button>
