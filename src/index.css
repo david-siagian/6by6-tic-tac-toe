@@ -177,12 +177,12 @@ ol {
   align-items: center;
   margin: 3rem 0;
   padding: 0;
-  gap: 6px;
+  gap: 1px;
 }
 
 #game-board button {
-  width: min(10vw, 5rem);
-  height: min(12vh, 5rem);
+  width: min(12vw, 5rem);
+  height: min(12vw, 5rem);
   border: 2px solid #3f3b00;
   background: #aca788;
   color: #3f3b00;
